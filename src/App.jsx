@@ -1,10 +1,18 @@
+import Home from "./pages/home";
+import Info from './pages/info'
+import NoFound from './pages/nofound'
+import { Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <>
-      <h1>Hola mundo</h1>
-      <p>XD</p>
-    </>
-  )
+    <Routes>
+      <Route path="/Sobre-Compi/" element={<Home/>}/>
+      <Route path="/Sobre-Compi/informacion" element={<Info/>}/>
+      <Route path="/Sobre-Compi/notas" element={<Info/>}/>
+      <Route path="/Sobre-Compi/recuerdos" element={<Info/>}/>
+      <Route path="/Sobre-Compi/sobremi" element={<Info/>}/>
+      <Route path="*" element={<NoFound/>}/>
+    </Routes>
+  );
 }
 
-export default App
+export default App;
