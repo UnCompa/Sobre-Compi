@@ -6,13 +6,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
+      gridTemplateRows: {
+        'layout': '96px 1fr 100%'
+      },
       colors: {
-        'pastel': '#fff',
-        'pastel-2': '#b0f2c2',
-        'pastel-3': '#b0bff2',
-        'pastel-4': '#f2b0e0',
-        'pastel-5': '#f2e3b0',
+        'pastel': '#eaffc2',
+        'pastel-2': '#a3ffac',
+        'pastel-3': '#cce5ff',
+        'pastel-4': '#ffca99',
+        'pastel-5': '#ff8097',
       },
       fontFamily: {
         'Monte': ['Montserrat', "sans-serif"],
