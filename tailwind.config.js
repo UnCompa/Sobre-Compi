@@ -14,11 +14,11 @@ export default {
         'layout': '96px 1fr 100%'
       },
       colors: {
-        'pastel': '#eaffc2',
-        'pastel-2': '#a3ffac',
-        'pastel-3': '#cce5ff',
-        'pastel-4': '#ffca99',
-        'pastel-5': '#ff8097',
+        'pastel-1': '#64c27b', /*Verde*/
+        'pastel-2': '#f7bfd8', /*Rosado*/
+        'pastel-3': '#fbd5e5', /*Rosado*/
+        'pastel-4': '#9bfab0', /*Verde*/
+        'pastel-5': '#c5ff7a', /*Verde*/
       },
       fontFamily: {
         'Monte': ['Montserrat', "sans-serif"],

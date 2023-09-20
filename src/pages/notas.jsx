@@ -11,14 +11,30 @@ export default function Notas() {
           <div className="h-1/1 flex-col">
             <Entradas
               nota={{
+                id: 2,
+                title: "Un Mensaje Especial",
+                date: "20/09/2023",
+                info: "Queria decir que espero le guste lo que estoy haciendo y lo valore, abrazos y un gusto",
+              }}
+            />
+            <Entradas
+              nota={{
                 id: 1,
                 title: "La primera de muchas",
                 date: "17/09/2023",
-                info: "XD",
+                info: "Buenas :D",
               }}
             />
           </div>
           <div className="h-1/1 flex-col">
+            <Versiones
+              nota={{
+                id: 0.3,
+                title: "Mejor inicio ♥",
+                date: "20/09/2023",
+                info: "El inicio fue termino por ahora, espero sea de su agrado",
+              }}
+            />
             <Versiones
               nota={{
                 id: 0.2,

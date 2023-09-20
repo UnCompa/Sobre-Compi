@@ -3,7 +3,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaTiktok } from "react-icons/fa6";
 
 export default function Footer({ phrase }) {
   return (
-    <footer className="bg-pastel-2 flex-col p-4 h-64">
+    <footer className="bg-pastel-1 flex-col p-4 h-64">
       <div
         className="flex justify-center items-center 
       flex-col"

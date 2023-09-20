@@ -1,6 +1,6 @@
 export default function Entradas({ nota }) {
     return (
-      <section className="bg-pastel-3 m-4 p-4 h-1/1 shadow-xl">
+      <section className="bg-pastel-3 m-4 p-4 h-1/1 shadow-xl text-black">
         <h2 className="text-2xl font-Monte">Version: {nota.id}</h2>
         <div className="bg-pastel-2 p-1 my-4 shadow-lg">
           <div className="flex justify-between m-1 bg-pastel-3 p-2">
