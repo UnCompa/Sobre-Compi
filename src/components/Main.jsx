@@ -1,4 +1,3 @@
-import { FaHeart } from "react-icons/fa6";
 import Imagen from "./../Imagenes/a3.jpg";
 import ImagenAlt from "./../Imagenes/alt.jpg";
 import Card from "./Card";
@@ -7,6 +6,20 @@ import Card2 from "./../Imagenes/notas.jpg";
 import Card3 from "./../Imagenes/recuerdos.jpg";
 import Card4 from "./../Imagenes/about.jpg";
 export default function Main() {
+
+  function handleInfo(){
+    open("/Sobre-Compi/informacion","_self")
+  }
+  function handleNotas(){
+    open("/Sobre-Compi/notas","_self")
+  }
+  function handleRecuerdos(){
+    open("/Sobre-Compi/recuerdos","_self")
+  }
+  function handleSobremi(){
+    open("/Sobre-Compi/sobremi","_self")
+  }
+
   return (
     <>
     <main className="container mx-auto h-full">
@@ -57,10 +70,10 @@ export default function Main() {
       </section>
       <h2 className="text-center text-4xl font-Monte font-semibold py-4 border-cyan-300 border-b-8 bg-cyan-200">Tabla de contenido:</h2>
       <article className="grid grid-1 md:grid-cols-2 gap-4 py-4">
-      <Card img={Card1} color="bg-rose-400" title='Información' text="Aqui estara todo lo relacionado con La Compi, datos sobre ella, gustos, cualidades, virtudes, sus debilidades, entre otras cosas relacionadas con ella, para ver mas pulsa el boton(No aun)."/>
-      <Card img={Card2} color="bg-blue-300" title='Notas' text="En esta sección estara notas, palabras que menciono a La Compi e información relevante, ademas de incluir notas que se iran actualizando de a poco a poco para ver mas pulsa el boton."/>
-      <Card img={Card3} color="bg-green-300" title='Recuerdos' text="La pagina contendra recuerdos que tengo con ella y seran destacadas en este lugar, es como un album de momentos importantes con ella, espero no la moleste y disfrute de esta sección."/>
-      <Card img={Card4} color="bg-slate-500" title='Sobre mi' text="Será el lugar mas personal de la pagina aqui esta informacion de mi, el contenido sera similar a lo que esta en Información, agregando cosas que este haciendo."/>
+      <Card evento={handleInfo} img={Card1} color="bg-rose-400" title='Información' text="Aqui estara todo lo relacionado con La Compi, datos sobre ella, gustos, cualidades, virtudes, sus debilidades, entre otras cosas relacionadas con ella, para ver mas pulsa el boton(No aun)."/>
+      <Card evento={handleNotas} img={Card2} color="bg-blue-300" title='Notas' text="En esta sección estara notas, palabras que menciono a La Compi e información relevante, ademas de incluir notas que se iran actualizando de a poco a poco para ver mas pulsa el boton."/>
+      <Card evento={handleRecuerdos} img={Card3} color="bg-green-300" title='Recuerdos' text="La pagina contendra recuerdos que tengo con ella y seran destacadas en este lugar, es como un album de momentos importantes con ella, espero no la moleste y disfrute de esta sección."/>
+      <Card evento={handleSobremi} img={Card4} color="bg-slate-500" title='Sobre mi' text="Será el lugar mas personal de la pagina aqui esta informacion de mi, el contenido sera similar a lo que esta en Información, agregando cosas que este haciendo."/>
       </article>
     </main>
     </>

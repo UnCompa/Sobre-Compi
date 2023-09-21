@@ -5,7 +5,7 @@ function Home() {
   return (
     <>
       <div className="grid grid-rows-layout">
-        <Header title="Inicio" />
+        <Header title="Inicio" color={"bg-pastel-1"} />
         <Main />
         <Footer phrase="La vida es una, asi que vivela con las personas que mas quieres" />
       </div>

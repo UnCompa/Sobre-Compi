@@ -6,7 +6,7 @@ export default function Notas() {
   return (
     <>
       <div className="grid-rows-layout">
-        <Header title="Notas" />
+        <Header title="Notas" color={"bg-pastel-5"}/>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="h-1/1 flex-col">
             <Entradas
