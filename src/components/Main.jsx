@@ -1,3 +1,4 @@
+import {useState} from 'react'
 import Imagen from "./../Imagenes/a3.jpg";
 import ImagenAlt from "./../Imagenes/alt.jpg";
 import Card from "./Card";
@@ -6,8 +7,11 @@ import Card2 from "./../Imagenes/notas.jpg";
 import Card3 from "./../Imagenes/recuerdos.jpg";
 import Card4 from "./../Imagenes/about.jpg";
 import { useNavigate } from "react-router-dom";
+import {useSound} from 'use-sound'
+import Tap from './../sound/Whistle.mp3'
 export default function Main() {
   let navigate = useNavigate();
+  const [playsound] = useSound(Tap)
   function handleInfo() {
     navigate("/Sobre-Compi/informacion");
   }
@@ -40,7 +44,7 @@ export default function Main() {
           <div className="my-2 p-2 w-full h-full md:h-full md:w-72 bg-pastel-3">
             <div className="h-full w-full flex justify-center p-1">
               <img
-                src={Imagen}
+                src={ImagenAlt}
                 alt="Tu"
                 className="object-cover object-center h-96 md:h-full w-full"
               />
@@ -81,6 +85,7 @@ export default function Main() {
         </h2>
         <article className="grid grid-1 md:grid-cols-2 gap-4 py-4">
           <Card
+            sound={playsound}
             evento={handleInfo}
             img={Card1}
             color="bg-rose-400"
@@ -88,6 +93,7 @@ export default function Main() {
             text="Aqui estara todo lo relacionado con La Compi, datos sobre ella, gustos, cualidades, virtudes, sus debilidades, entre otras cosas relacionadas con ella, para ver mas pulsa el boton(No aun)."
           />
           <Card
+          sound={playsound}
             evento={handleNotas}
             img={Card2}
             color="bg-blue-300"
@@ -95,6 +101,7 @@ export default function Main() {
             text="En esta sección estara notas, palabras que menciono a La Compi e información relevante, ademas de incluir notas que se iran actualizando de a poco a poco para ver mas pulsa el boton."
           />
           <Card
+          sound={playsound}
             evento={handleRecuerdos}
             img={Card3}
             color="bg-green-300"
@@ -102,6 +109,7 @@ export default function Main() {
             text="La pagina contendra recuerdos que tengo con ella y seran destacadas en este lugar, es como un album de momentos importantes con ella, espero no la moleste y disfrute de esta sección."
           />
           <Card
+          sound={playsound}
             evento={handleSobremi}
             img={Card4}
             color="bg-slate-500"

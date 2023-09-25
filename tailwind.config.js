@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   darkMode: "media",
   content: [
@@ -10,6 +11,9 @@ export default {
       center: true,
     },
     extend: {
+      backgroundImage: {
+        "fondo": "url('/src/Imagenes/helado.jpg')",
+      },
       gridTemplateRows: {
         'layout': '96px 1fr 100%'
       },

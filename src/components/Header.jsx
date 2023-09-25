@@ -3,8 +3,13 @@ import NavBar from "./NavBar";
 import { HiBars3BottomLeft, HiXMark } from "react-icons/hi2";
 import { FaX } from "react-icons/fa6";
 import Logo from "./../Imagenes/SRC/8.png";
+import { useSound } from "use-sound";
+import Sound from "./../sound/Tap.mp3";
+import OpenSound from "./../sound/Open.mp3";
 
 function Header({ title, color }) {
+  const [playSound] = useSound(Sound);
+  const [playOpenSound] = useSound(OpenSound);
   const [nav, setNav] = useState(true);
   const [icon, setIcon] = useState(true);
   function handleClick() {
@@ -21,6 +26,8 @@ function Header({ title, color }) {
       <NavBar type={nav ? "h-0 hidden" : "h-screen"} />
       <button
         onClick={handleClick}
+        onMouseEnter={playOpenSound}
+        onTouchStart={playOpenSound}
         className="text-black text-4xl transition duration-150 ease-in-out px-6"
       >
         {" "}
@@ -32,6 +39,8 @@ function Header({ title, color }) {
         alt="Logo"
         className="h-20 object-cover w-16 cursor-pointer mr-6 drop-shadow-xl"
         onClick={handleReturn}
+        onMouseEnter={playSound}
+        onTouchStart={playSound}
       />
     </header>
   );

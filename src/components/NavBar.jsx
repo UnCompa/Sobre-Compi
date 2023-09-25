@@ -9,7 +9,7 @@ export default function NavBar({ type }) {
         <li className="font-Monte text-black my-6 py-2 text-xl border-b-4 border-pastel">
           <NavLink
             className={({ isActive }) =>
-              isActive ? "text-pastel font-bold drop-shadow" : ""
+              isActive ? "text-pastel-1 font-bold drop-shadow" : ""
             }
             to="/Sobre-Compi/"
           >
