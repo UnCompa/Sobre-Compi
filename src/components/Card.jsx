@@ -9,7 +9,7 @@ export default function Card({title,text,color,img,evento,sound}) {
             <div className="text-start flex-col w-full lg:p-8 p-4 px-8">               
              <h2 className="text-4xl font-Monte py-4">{title}</h2>
                 <p className="w-full text-lg font-Poppins">{text}</p>
-            <button onClick={evento} onMouseEnter={sound} onTouchStart={sound} className="bg-slate-50 px-8 py-2 rounded-lg mt-12 text-xl shadow hover:bg-slate-800 hover:text-white transition-all">{<FaArrowRight/>}</button>
+            <button onClick={evento} onTouchStart={sound} className="bg-slate-50 px-8 py-2 rounded-lg mt-12 text-xl shadow hover:bg-slate-800 hover:text-white transition-all">{<FaArrowRight/>}</button>
             </div>
         </div>
       </section>

@@ -27,7 +27,6 @@ function Header({ title, color }) {
       <button
         onClick={handleClick}
         onMouseEnter={playOpenSound}
-        onTouchStart={playOpenSound}
         className="text-black text-4xl transition duration-150 ease-in-out px-6"
       >
         {" "}
@@ -40,7 +39,6 @@ function Header({ title, color }) {
         className="h-20 object-cover w-16 cursor-pointer mr-6 drop-shadow-xl"
         onClick={handleReturn}
         onMouseEnter={playSound}
-        onTouchStart={playSound}
       />
     </header>
   );
