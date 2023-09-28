@@ -1,5 +1,5 @@
 import Header from "./../components/Header";
-import Imagen from './../Imagenes/yo.jpg'
+import Imagen from './../Imagenes/yo.jpeg'
 import Card from './../components/Card2'
 import Programacion from "./../Imagenes/about.jpg";
 import Footer from "../components/Footer";
@@ -9,11 +9,11 @@ export default function Sobremi() {
       <Header title="Sobre mi" color={"bg-cyan-300"} />
       <main className="bg-slate-800 h-full">
       <section className="container mx-auto h-full p-4 grid grid-cols-1 place-items-center md:grid-cols-3">
-        <div className="h-72 w-72 bg-pastel-2 rounded-full mb-4">
+        <div className="h-72 w-56 bg-pastel-2 rounded-full mb-4">
           <img
             src={Imagen}
             alt="Imagen"
-            className="h-full w-full object-cover border-white border-2 -z-10"
+            className="h-full w-full object-cover object-center border-white border-2 -z-10"
           />
         </div>
         <div className="bg-blue-300 h-full w-full col-span-2 p-8">
