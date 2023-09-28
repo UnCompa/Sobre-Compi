@@ -2,6 +2,18 @@ import LogoAlt from "./../Imagenes/SRC/2.png";
 import { FaFacebook, FaGithub, FaInstagram, FaTiktok } from "react-icons/fa6";
 
 export default function Footer({ phrase, color }) {
+  function Facebook() {
+    open("https://www.facebook.com/UnCompa1777");
+  }
+  function Instagram() {
+    open("https://www.instagram.com/UnCompa1777");;
+  }
+  function TikTok() {
+    open("https://tiktok.com");
+  }
+  function GitHub() {
+    open("https://github.com/UnCompa");
+  }
   return (
     <footer className={`${color} flex-col p-4 h-64`}>
       <div
@@ -18,12 +30,34 @@ export default function Footer({ phrase, color }) {
         </p>
       </div>
       <div className="p-4 flex-col md:flex items-center">
-        <h3 className="text-2xl font-Poppins text-center font-semibold">Redes Sociales</h3>
+        <h3 className="text-2xl font-Poppins text-center font-semibold">
+          Redes Sociales
+        </h3>
         <div className="h-16 flex justify-center items-center w-1/1">
-          <button className="bg-slate-800 text-white text-xl rounded-2xl p-2 mx-3">{<FaFacebook />}</button>
-          <button className="bg-slate-800 text-white text-xl rounded-2xl p-2 mx-3">{<FaInstagram />}</button>
-          <button className="bg-slate-800 text-white text-xl rounded-2xl p-2 mx-3">{<FaTiktok />}</button>
-          <button className="bg-slate-800 text-white text-xl rounded-2xl p-2 mx-3">{<FaGithub />}</button>
+          <button
+            onClick={Facebook}
+            className="text-black text-3xl rounded-full p-3 mx-3 hover:text-white transition drop-shadow"
+          >
+            {<FaFacebook />}
+          </button>
+          <button
+            onClick={Instagram}
+            className="text-black text-3xl rounded-full p-3 mx-3 hover:text-white transition drop-shadow"
+          >
+            {<FaInstagram />}
+          </button>
+          <button
+            onClick={TikTok}
+            className="text-black text-3xl rounded-full p-3 mx-3 hover:text-white transition drop-shadow"
+          >
+            {<FaTiktok />}
+          </button>
+          <button
+            onClick={GitHub}
+            className="text-black text-3xl rounded-full p-3 mx-3 hover:text-white transition drop-shadow"
+          >
+            {<FaGithub />}
+          </button>
         </div>
       </div>
     </footer>

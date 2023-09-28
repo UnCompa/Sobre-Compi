@@ -4,10 +4,11 @@ import Sound from "../components/Sound";
 import Header from "./../components/Header";
 import Icono from './../Imagenes/Icons/casa.png'
 import {Helmet} from 'react-helmet'
+import {useEffect} from 'react'
 function Home() {
   return (
     <>
-    <Sound counter={"1"}/>
+    <Sound/>
       <div className="grid grid-rows-layout">
         <Helmet>
           <title>Inicio | Todo lo destacado</title>

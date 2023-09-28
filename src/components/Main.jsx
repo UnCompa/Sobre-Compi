@@ -44,7 +44,7 @@ export default function Main() {
           <div className="my-2 p-2 w-full h-full md:h-full md:w-72 bg-pastel-3">
             <div className="h-full w-full flex justify-center p-1">
               <img
-                src={ImagenAlt}
+                src={Imagen}
                 alt="Tu"
                 className="object-cover object-center h-96 md:h-full w-full"
               />
