@@ -1,6 +1,5 @@
 import Footer from "../components/Footer";
 import Main from "../components/Main";
-import Sound from "../components/Sound";
 import Header from "./../components/Header";
 import Icono from './../Imagenes/Icons/casa.png'
 import {Helmet} from 'react-helmet'
@@ -8,7 +7,6 @@ import {useEffect} from 'react'
 function Home() {
   return (
     <>
-    <Sound/>
       <div className="grid grid-rows-layout">
         <Helmet>
           <title>Inicio | Todo lo destacado</title>

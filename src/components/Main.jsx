@@ -9,6 +9,7 @@ import Card4 from "./../Imagenes/about.jpg";
 import { useNavigate } from "react-router-dom";
 import {useSound} from 'use-sound'
 import Tap from './../sound/Whistle.mp3'
+import Music from './../sound/Music.mp3'
 export default function Main() {
   let navigate = useNavigate();
   const [playsound] = useSound(Tap)
@@ -27,6 +28,11 @@ export default function Main() {
   return (
     <>
       <main className="container mx-auto h-full">
+      <section className='bg-slate-400 container mx-auto h-24'>
+            <div className='p-6'>
+            <audio src={Music} controls autoPlay className='w-full bg-slate-900 rounded-lg shadow-xl' loop></audio>
+            </div>
+        </section>
         <section className="md:h-64 md:flex md:items-center my-2">
           <div className="my-8 w-full bg-pastel-4 h-full">
             <h2 className="text-xl p-3 font-Monte font-bold">¿Para quién?</h2>
@@ -44,7 +50,7 @@ export default function Main() {
           <div className="my-2 p-2 w-full h-full md:h-full md:w-72 bg-pastel-3">
             <div className="h-full w-full flex justify-center p-1">
               <img
-                src={Imagen}
+                src={ImagenAlt}
                 alt="Tu"
                 className="object-cover object-center h-96 md:h-full w-full"
               />
@@ -90,6 +96,12 @@ export default function Main() {
             img={Card1}
             color="bg-rose-400"
             title="Información"
+            code={<span
+              class="whitespace-nowrap rounded-full bg-rose-100 px-2.5 py-0.5 text-sm text-purple-800 m-3"
+            >
+              Nuevo
+            </span>
+            }
             text="Aqui estara todo lo relacionado con La Compi, datos sobre ella, gustos, cualidades, virtudes, sus debilidades, entre otras cosas relacionadas con ella, para ver mas pulsa el boton(No aun)."
           />
           <Card
@@ -98,6 +110,11 @@ export default function Main() {
             img={Card2}
             color="bg-blue-300"
             title="Notas"
+            code={<span
+              class="whitespace-nowrap rounded-full bg-rose-100 px-2.5 py-0.5 text-sm text-purple-800 m-3"
+            >
+              Nuevos Cambios
+            </span>}
             text="En esta sección estara notas, palabras que menciono a La Compi e información relevante, ademas de incluir notas que se iran actualizando de a poco a poco para ver mas pulsa el boton."
           />
           <Card

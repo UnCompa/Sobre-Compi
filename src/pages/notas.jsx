@@ -18,6 +18,14 @@ export default function Notas() {
             <Entradas
               nota={{
                 id: 3,
+                title: "Acabado",
+                date: "12/10/2023",
+                info: "Se acabo finalmente lo que queria, su regalo es este aunque espere muchos mas :3",
+              }}
+            />
+            <Entradas
+              nota={{
+                id: 3,
                 title: "Casi acabando",
                 date: "28/09/2023",
                 info: "Ya esta mucho mejor que antes, agregando cositas antes de terminar con todo, este sera mi regalo de navidad y gracias <3",
@@ -41,6 +49,14 @@ export default function Notas() {
             />
           </div>
           <div className="h-1/1 flex-col">
+            <Versiones
+              nota={{
+                id: 1.0,
+                title: "Acabando",
+                date: "12/10/2023",
+                info: "Agregue lo mas importante para mi, quizas se actualice pero quien sabe",
+              }}
+            />
             <Versiones
               nota={{
                 id: 0.6,
