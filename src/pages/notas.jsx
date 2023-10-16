@@ -2,8 +2,8 @@ import Entradas from "../components/Entradas";
 import Versiones from "../components/Version";
 import Footer from "../components/Footer";
 import Header from "./../components/Header";
-import {Helmet} from 'react-helmet'
-import Icono from './../Imagenes/Icons/msg.png'
+import { Helmet } from "react-helmet";
+import Icono from "./../Imagenes/Icons/msg.png";
 export default function Notas() {
   return (
     <>
@@ -17,7 +17,15 @@ export default function Notas() {
           <div className="h-1/1 flex-col">
             <Entradas
               nota={{
-                id: 3,
+                id: 5,
+                title: "Lo mejor que he hecho",
+                date: "16/10/2023",
+                info: "Algo para recordarlo",
+              }}
+            />
+            <Entradas
+              nota={{
+                id: 4,
                 title: "Acabado",
                 date: "12/10/2023",
                 info: "Se acabo finalmente lo que queria, su regalo es este aunque espere muchos mas :3",
@@ -49,6 +57,14 @@ export default function Notas() {
             />
           </div>
           <div className="h-1/1 flex-col">
+            <Versiones
+              nota={{
+                id: 1.1,
+                title: "Correciones en la seccion Información",
+                date: "16/10/2023",
+                info: "Tiempo de amistad mejorada",
+              }}
+            />
             <Versiones
               nota={{
                 id: 1.0,

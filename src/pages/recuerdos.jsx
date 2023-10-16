@@ -4,7 +4,6 @@ import Icono from './../Imagenes/brillo.jpg'
 import CardRecuerdos from '../components/CardRecuerdos'
 import Footer from "../components/Footer";
 /*Imagenes*/
-import Imagen from './../Imagenes/nada.jpg'
 import Amiga1 from './../Imagenes/recuerdos/amiga1.jpeg'
 import Amiga2 from './../Imagenes/recuerdos/amiga2.jpg'
 import Amiga3 from './../Imagenes/recuerdos/amiga3.png'
@@ -28,6 +27,8 @@ import Toma14 from './../Imagenes/Amiga/compi14.jpg'
 import Toma15 from './../Imagenes/Amiga/compi15.jpg'
 import Toma16 from './../Imagenes/Amiga/compi16.jpg'
 import Toma17 from './../Imagenes/Amiga/compi17.jpg'
+import Music from "./../components/Music";
+import Musica from "./../sound/Music.mp3";
 export default function Recuerdos() {
   return (
     <>
@@ -36,6 +37,7 @@ export default function Recuerdos() {
         <link rel="shortcut icon" href={Icono} type="image/x-icon" />
       </Helmet>
       <Header title="Recuerdos" color={"bg-purple-300"}/>
+      <Music src={Musica} />
       <main className="h-full w-full bg-fondo">
         <h2 className="font-Monte text-3xl my-4 py-4 px-4 bg-white inline-block rounded-lg text-center w-full">Fotos:</h2>
         <section className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-4 bg-opacity-40">

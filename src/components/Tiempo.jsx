@@ -1,8 +1,7 @@
-import dayjs, { Dayjs, FormatObject } from "dayjs";
+import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
-import format from "dayjs/plugin/localizedFormat";
-import { useEffect, useState } from "react";
-dayjs.extend(relativeTime, format);
+import duration from "dayjs/plugin/duration";
+dayjs.extend(relativeTime, duration);
 export default function Tiempo() {
   let date = dayjs(new Date("2023-05-15")).format('DD/MM/YYYY');
   let month = dayjs(new Date("2023-05-15")).from();
