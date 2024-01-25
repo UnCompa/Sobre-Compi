@@ -3,10 +3,10 @@ import relativeTime from "dayjs/plugin/relativeTime";
 import duration from "dayjs/plugin/duration";
 dayjs.extend(relativeTime, duration);
 export default function Tiempo() {
-  let date = dayjs(new Date("2023-05-15")).format('DD/MM/YYYY');
-  let month = dayjs(new Date("2023-05-15")).from();
-  let day = dayjs(new Date("2023-05-15")).date();
-  let hour = dayjs(new Date("2023-05-15")).hour();
+  let date = dayjs(new Date("2023-06-15")).format('DD/MM/YYYY');
+  let month = dayjs(new Date("2023-06-15")).from();
+  let day = dayjs(new Date("2023-06-15")).date();
+  let hour = dayjs(new Date("2023-06-15")).hour();
   let minute = dayjs().minute();
   let second = dayjs().second();
   return (
