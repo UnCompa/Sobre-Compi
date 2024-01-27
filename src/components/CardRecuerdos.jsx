@@ -15,7 +15,7 @@ export default function Recuerdos({ imagen, frase }) {
           loading="lazy"
         />
       </div>
-      <div className="bg-zinc-900 px-2 py-4 font-Poppins text-xl text-white font-bold">
+      <div className="bg-zinc-700 px-2 py-4 my-2 rounded font-Poppins text-xl text-white">
         <p>{frase}</p>
       </div>
     </motion.article>
