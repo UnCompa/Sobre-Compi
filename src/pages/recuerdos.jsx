@@ -53,11 +53,11 @@ export default function Recuerdos() {
           <CardRecuerdos imagen={AmigaNew1} frase={`Usando un filtro de un recuadro verde, que bien le queda`}/>
           <CardRecuerdos imagen={AmigaNew2} frase={`Aqui se aprecia su ojo totalmente`}/>
           <CardRecuerdos imagen={AmigaNew3} frase={`Foto donde se aprecia mejor su linda cara, con filtro que la rodea de corazones`}/>
-          <CardRecuerdos imagen={AmigaNew4} frase={``}/>
-          <CardRecuerdos imagen={AmigaNew5} frase={``}/>
-          <CardRecuerdos imagen={AmigaNew6} frase={``}/>
-          <CardRecuerdos imagen={AmigaNew7} frase={``}/>
-          <CardRecuerdos imagen={AmigaNew8} frase={``}/>
+          <CardRecuerdos imagen={AmigaNew4} frase={`Foto donde se tapa el rostro con su mano`}/>
+          <CardRecuerdos imagen={AmigaNew5} frase={`Aqui usa un filtro que la rodea de fantasmas, tapándose la carita `}/>
+          <CardRecuerdos imagen={AmigaNew6} frase={`Un recuerdo de como es muy buena pintandose las uñas`}/>
+          <CardRecuerdos imagen={AmigaNew7} frase={`En esta foto se aprecia su hermoso delineado`}/>
+          <CardRecuerdos imagen={AmigaNew8} frase={`Como la anterior pero con otra perspectiva `}/>
           <CardRecuerdos imagen={AmigaNew9} frase={``}/>
           <CardRecuerdos imagen={AmigaNew10} frase={``}/>
           <CardRecuerdos imagen={AmigaNew11} frase={``}/>
