@@ -15,7 +15,7 @@ export default function Footer({ phrase, color }) {
     open("https://github.com/UnCompa");
   }
   return (
-    <footer className={`${color} flex-col p-4 h-64`}>
+    <footer className={`${color} flex-col p-4 h-64 -z-10`}>
       <div
         className="flex justify-center items-center 
       flex-col"

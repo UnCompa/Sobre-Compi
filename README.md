@@ -1,6 +1,6 @@
-# React + Vite
+# Proyecto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aquio 
 
 Currently, two official plugins are available:
 

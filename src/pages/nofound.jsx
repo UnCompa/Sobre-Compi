@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function NoFound() {
     const link = location.href
     return (

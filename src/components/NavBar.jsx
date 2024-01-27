@@ -11,7 +11,7 @@ export default function NavBar({ type }) {
             className={({ isActive }) =>
               isActive ? "text-pastel-1 font-bold drop-shadow" : ""
             }
-            to="/Sobre-Compi/"
+            to="/"
           >
             Inicio
           </NavLink>
@@ -21,39 +21,19 @@ export default function NavBar({ type }) {
             className={({ isActive }) =>
               isActive ? "text-pastel-2 font-bold" : ""
             }
-            to="/Sobre-Compi/informacion"
+            to="/informacion"
           >
             Información
           </NavLink>
         </li>
-        <li className="font-Monte text-black my-6 py-2 text-xl border-b-4 border-pastel">
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "text-black font-bold" : ""
-            }
-            to="/Sobre-Compi/notas"
-          >
-            Notas
-          </NavLink>
-        </li>
-        <li className="font-Monte text-black my-6 py-2 text-xl border-b-4 border-pastel">
+        <li className="font-Monte text-gray-500 my-6 py-2 text-xl border-b-4 border-pastel">
           <NavLink
             className={({ isActive }) =>
               isActive ? "text-purple-300 font-bold" : ""
             }
-            to="/Sobre-Compi/recuerdos"
+            to="/recuerdos"
           >
             Recuerdos
-          </NavLink>
-        </li>
-        <li className="font-Monte text-black my-6 py-2 text-xl border-b-4 border-pastel">
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "text-cyan-300 font-bold" : ""
-            }
-            to="/Sobre-Compi/sobremi"
-          >
-            Sobre mi
           </NavLink>
         </li>
       </ul>

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import NavBar from "./NavBar";
 import { HiBars3BottomLeft, HiXMark } from "react-icons/hi2";
-import { FaX } from "react-icons/fa6";
 import Logo from "./../Imagenes/SRC/8.png";
 import { useSound } from "use-sound";
 import Sound from "./../sound/Tap.mp3";
@@ -21,7 +20,7 @@ function Header({ title, color }) {
   }
   return (
     <header
-      className={`h-24 ${color} w-full flex items-center justify-between row-start-1 row-span-1 sticky top-0 shadow-lg`}
+      className={`h-24 ${color} w-full flex items-center justify-between row-start-1 row-span-1 sticky top-0 shadow-lg z-50`}
     >
       <NavBar type={nav ? "h-0 hidden" : "h-screen"} />
       <button

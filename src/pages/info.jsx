@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "./../components/Header";
-import Imagen from "./../Imagenes/a1.jpg";
+import Imagen from './../Imagenes/recuerdosnew/7.jpg'
+import Alt from './../Imagenes/alt.jpg'
 import Brillo from "./../Imagenes/brillo.jpg";
 import { Helmet } from "react-helmet";
 import Icono from "./../Imagenes/Icons/libreta.png";

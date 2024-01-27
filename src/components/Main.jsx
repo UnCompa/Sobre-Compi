@@ -1,9 +1,8 @@
-import Imagen from "./../Imagenes/a3.jpg";
+import Imagen from './../Imagenes/recuerdosnew/21.jpg'
+import Alt from './../Imagenes/alt.jpg'
 import Card from "./Card";
 import Card1 from "./../Imagenes/info.jpg";
-import Card2 from "./../Imagenes/notas.jpg";
 import Card3 from "./../Imagenes/recuerdos.jpg";
-import Card4 from "./../Imagenes/about.jpg";
 import { useNavigate } from "react-router-dom";
 import { useSound } from "use-sound";
 import Tap from "./../sound/Whistle.mp3";
@@ -13,16 +12,10 @@ export default function Main() {
   let navigate = useNavigate();
   const [playsound] = useSound(Tap);
   function handleInfo() {
-    navigate("/Sobre-Compi/informacion");
-  }
-  function handleNotas() {
-    navigate("/Sobre-compi/notas");
+    navigate("/informacion");
   }
   function handleRecuerdos() {
-    navigate("/Sobre-compi/recuerdos");
-  }
-  function handleSobremi() {
-    navigate("/Sobre-compi/sobremi");
+    navigate("/recuerdos");
   }
   return (
     <>
@@ -100,32 +93,11 @@ export default function Main() {
           />
           <Card
             sound={playsound}
-            evento={handleNotas}
-            img={Card2}
-            color="bg-blue-300"
-            title="Notas"
-            code={
-              <span className="whitespace-nowrap rounded-full bg-cyan-400 px-2.5 py-0.5 text-sm text-white m-3">
-                Nuevo
-              </span>
-            }
-            text="En esta sección estara notas, palabras que menciono a La Compi e información relevante, ademas de incluir notas que se iran actualizando de a poco a poco para ver mas pulsa el boton."
-          />
-          <Card
-            sound={playsound}
             evento={handleRecuerdos}
             img={Card3}
             color="bg-green-300"
             title="Recuerdos"
             text="La pagina contendra recuerdos que tengo con ella y seran destacadas en este lugar, es como un album de momentos importantes con ella, espero no la moleste y disfrute de esta sección."
-          />
-          <Card
-            sound={playsound}
-            evento={handleSobremi}
-            img={Card4}
-            color="bg-slate-500"
-            title="Sobre mi"
-            text="Será el lugar mas personal de la pagina aqui esta informacion de mi, el contenido sera similar a lo que esta en Información, agregando cosas que este haciendo."
           />
         </article>
       </main>
