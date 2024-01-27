@@ -30,7 +30,7 @@ Hay cosas que hace cuando esta mal, una de ellas es escuchar música en su cuart
           title="Pasiones"
           text="
           - Como antes ella ama jugar basquet, hacer dibujos hermosos, y escuchar su musica favorita para levantar su ánimo. Y como fan de las Literatura, ama leer libros y relatar poesía. Tambien siendo fan de los animales en especial los gatos que llevan un espacio en su corazón.
-          - Mientras esta desocupada ella duerme, también ve videos acerca de lo que le gusta como el basquet, dibujar y el anime.
+          - Mientras esta desocupada ella duerme, también ve videos acerca de lo que le gusta como el basquet, dibujar, ver kdramas, y el anime.
           - Aunque su mejor lugar es ella misma pasando sola. Disfrutando de cualquier actividad como escuchar y pasar en la lluvia como ver el cielo estrellado."
         />
         <Card
@@ -97,7 +97,7 @@ Hay cosas que hace cuando esta mal, una de ellas es escuchar música en su cuart
           img={Amigos}
           color="bg-cyan-200"
           title="Mi opinión ♪"
-          text="Para mi ella es una chica excelente en muchas cosas, como el deporte el arte, su voz es algo que ,e encanta, además de sus ojos, su personalidad es honesta y linda. Una chica buena en todos los sentidos, la mejor amiga que tengo y tendre ♥"
+          text="Para mi ella es una chica excelente en muchas cosas, como el deporte el arte, su voz es algo que ,la hace encantadora, además de sus ojos, su personalidad es honesta y linda. Una chica buena en todos los sentidos, la mejor amiga que puedes tener ♥"
         />
       </article>
   )
