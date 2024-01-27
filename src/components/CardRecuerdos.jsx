@@ -14,7 +14,7 @@ export default function Recuerdos({ imagen, frase }) {
           className="h-full w-full object-cover rounded"
         />
       </div>
-      <div className="p-4 font-Poppins text-xl">
+      <div className="p-4 font-Poppins text-xl text-white font-bold">
         <p>{frase}</p>
       </div>
     </motion.article>
