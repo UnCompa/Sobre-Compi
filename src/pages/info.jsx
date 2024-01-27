@@ -37,24 +37,23 @@ function Info() {
             bien con su cuerpo y mente.
           </p>
           <p className="font-Poppins">
-            Ella nació el 07/03/2007, una fecha especial que siempre celebrará.
+            Ella nació el <strong>07 de marzo del 2007</strong>, una fecha especial que siempre celebrará.
           </p>
           <ul className="list-disc px-8 font-Poppins">
             <li>Tiene 15 años</li>
-            <li>Mide 160cm aprox.</li>
-            <li>Se llama Sam</li>
-            <li>Su cumple es en marzo</li>
+            <li>Mide 160cm aproximadamente</li>
+            <li>Se llama Samantha Guañuna Valentina Castillo</li>
           </ul>
         </div>
       </section>
       <section className="container mx-auto w-full bg-slate-400">
-          <h3 className="text-3xl text-white font-Poppins text-center p-4">Tiempo ⌛</h3>
+          <h3 className="text-3xl text-white font-Poppins text-center p-4">Amistad⌛</h3>
           <Tiempo/>
       </section>
       <Tabla/>
       <Footer
         phrase={
-          "Hay cosas buenas y malas de nosotros pero eso nos hace personas :D"
+          "Hay cosas buenas y malas de nosotros pero eso nos hace personas"
         }
         color={"bg-pastel-2"}
       />
