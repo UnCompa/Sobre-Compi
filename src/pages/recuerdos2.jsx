@@ -55,16 +55,16 @@ const Recuerdos2 = () => {
           </Helmet>
           <Header title="Recuerdos" color={"bg-purple-300"}/>
           <Music src={Musica} />
-          <div className=' bg-zinc-50 container mx-auto border-2 border-pastel-4 my-4 p-2 shadow-lg'>
-            <h2 className='font-Monte text-2xl'>Subir recuerdo</h2>
+          <div className=' bg-zinc-950 container mx-auto border-2 border-pastel-4 my-4 p-4 shadow-lg'>
+            <h2 className='font-Monte text-2xl text-white'>Subir recuerdo</h2>
             <form action="" className='flex flex-col' onSubmit={(e)=>handleSubmit(e)}>
-                <label className='font-Poppins py-1' htmlFor="">Titulo:</label>
+                <label className='font-Poppins py-1 text-white' htmlFor="">Titulo:</label>
                 <input onChange={(e)=> setTitle(e.target.value)} className='ring ring-pastel-4 px-1 font-Poppins focus:ring focus:ring-pastel-1' type="text" name="" id="" />
-                <label className='font-Poppins py-1' htmlFor="">Descripcion:</label>
+                <label className='font-Poppins py-1 text-white' htmlFor="">Descripcion:</label>
                 <input onChange={(e)=> setDescription(e.target.value)} className='ring ring-pastel-4 px-1 font-Poppins focus:ring focus:ring-pastel-1' type="text" name="" id="" />
-                <label className='font-Poppins py-1' htmlFor="">Imagen:</label>
-                <input type="file" name="hola" id="" onChange={(e)=> setFile(e.target.files[0])}/>
-                <button className='bg-pastel-1 my-2 px-4 py-2 rounded-md'>Enviar</button>
+                <label className='font-Poppins py-1 text-white' htmlFor="">Imagen:</label>
+                <input className='text-white' type="file" name="hola" id="" onChange={(e)=> setFile(e.target.files[0])}/>
+                <button className='bg-pastel-1 my-2 px-4 py-2 rounded-md text-white'>Enviar</button>
             </form>
           </div>
           <main className="h-full w-full bg-fondo">
