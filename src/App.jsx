@@ -5,17 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Notas from "./pages/notas";
 import Recuerdos2 from "./pages/recuerdos2";
 function App() {
-
   return (
-<<<<<<< HEAD
-    <>
-      <h1>Hola mundo</h1>
-      <p>
-        XD
-      </p>
-    </>
-  )
-=======
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/informacion" element={<Info/>}/>
@@ -26,7 +16,6 @@ function App() {
       <Route path="*" element={<NoFound/>}/>
     </Routes>
   );
->>>>>>> Casa
 }
 
 export default App;

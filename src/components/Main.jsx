@@ -1,5 +1,4 @@
 import Imagen from './../Imagenes/recuerdosnew/21.jpg'
-import Alt from './../Imagenes/alt.jpg'
 import Card from "./Card";
 import Card1 from "./../Imagenes/info.jpg";
 import Card3 from "./../Imagenes/recuerdos.jpg";
