@@ -6,7 +6,10 @@ export default function Recuerdos({ imagen, frase, title, id }) {
     fetch(api,{
       method: "DELETE"
     }).then((res)=> res.json())
-    .then((data)=>console.log(data))
+    .then((data)=>{
+      console.log(data)
+      window.location.reload()
+    })
   }
   return (
     <motion.article
