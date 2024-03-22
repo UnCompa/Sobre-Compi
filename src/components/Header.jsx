@@ -16,7 +16,7 @@ function Header({ title, color }) {
     setIcon(!icon);
   }
   function handleReturn() {
-    window.open("/Sobre-Compi/", "_self");
+    window.open("/", "_self");
   }
   return (
     <header
