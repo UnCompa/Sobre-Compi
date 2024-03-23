@@ -54,6 +54,8 @@ const Recuerdos2 = () => {
                   imagen={data.url}
                   key={data.id}
                   id={data.id}
+                  createdAt={data.createdAt}
+                  updatedAt={data.updatedAt}
                 />
             </>
           ))

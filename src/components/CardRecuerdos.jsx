@@ -2,14 +2,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-export default function Recuerdos({ imagen, frase, title, id }) {
-  const handleClick = () =>{
-    const api = `https://compis.onrender.com/api/images/${id}`
-    fetch(api,{
-      method: "DELETE"
-    }).then((res)=> res.json())
-    .then((data)=>console.log(data))
-  }
+export default function Recuerdos({ imagen, frase, title, id,createdAt,updatedAt }) {
   return (
     <Link to={`/recuerdos/${id}`} className="text-black hover:-translate-y-0.5 transition-all">
       <motion.article
@@ -24,6 +17,10 @@ export default function Recuerdos({ imagen, frase, title, id }) {
             className="h-full w-full object-cover rounded aspect-square object-center"
             loading="lazy"
           />
+        </div>
+        <div className="flex gap-x-2 px-2 italic text-zinc-600">
+          <span>Creado: {createdAt}</span>
+          <span>Actualizado: {updatedAt}</span>
         </div>
         <div className="p-4 font-Poppins text-2xl text-center">
           <p>{title}</p>
