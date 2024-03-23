@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import NavBar from "./NavBar";
 import { HiBars3BottomLeft, HiXMark } from "react-icons/hi2";
@@ -16,7 +17,7 @@ function Header({ title, color }) {
     setIcon(!icon);
   }
   function handleReturn() {
-    window.open("/Sobre-Compi/", "_self");
+    window.open("/", "_self");
   }
   return (
     <header

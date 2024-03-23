@@ -1,7 +1,6 @@
 import Footer from "../components/Footer";
 import Header from "./../components/Header";
 import Imagen from './../Imagenes/recuerdosnew/7.jpg'
-import Alt from './../Imagenes/alt.jpg'
 import Brillo from "./../Imagenes/brillo.jpg";
 import { Helmet } from "react-helmet";
 import Icono from "./../Imagenes/Icons/libreta.png";
@@ -9,7 +8,27 @@ import Tabla from './../components/Table'
 import Tiempo from "../components/Time";
 import Music from "../components/Music";
 import Musica from "./../sound/Music.mp3";
+import { useEffect, useState } from "react";
+import dayjs from "dayjs";
 function Info() {
+  const [years,setYears] = useState(0)
+  const initialDate2 = dayjs("2008-03-07");
+  useEffect(()=>{
+    const calculateYears = () => {
+      const currentDate = dayjs(); // Fecha actual
+      const yearsElapsed = currentDate.diff(initialDate2, 'year'); // Años transcurridos
+      setYears(yearsElapsed); // Actualiza el estado de los años
+    };
+
+    // Llama a la función para calcular los años inmediatamente
+    calculateYears();
+
+    // Configura un intervalo para actualizar los años cada año
+    const interval = setInterval(() => {
+      calculateYears();
+    }, 1000 * 60 * 60 * 24 * 365); // Actualizar cada año
+    return () => (clearInterval(interval))
+  },[initialDate2])
   return (
     <>
       <Helmet>
@@ -32,29 +51,28 @@ function Info() {
             Información general:
           </h2>
           <p className="font-Poppins">
-            Es una chica de 15 años a la que le gusta que la llamen Sam o Sami.
+            Es una chica de {years} años a la que le gusta que la llamen Sam o Sami.
             Su altura es de 160 cm. En estos momentos, está bien y se siente
             bien con su cuerpo y mente.
           </p>
           <p className="font-Poppins">
-            Ella nació el 07/03/2007, una fecha especial que siempre celebrará.
+            Ella nació el <strong>07 de marzo del 2008</strong>, una fecha especial que siempre celebrará.
           </p>
           <ul className="list-disc px-8 font-Poppins">
-            <li>Tiene 15 años</li>
-            <li>Mide 160cm aprox.</li>
-            <li>Se llama Sam</li>
-            <li>Su cumple es en marzo</li>
+            <li>Tiene {years} años</li>
+            <li>Mide 160cm aproximadamente</li>
+            <li>Se llama Samantha Guañuna Valentina Castillo</li>
           </ul>
         </div>
       </section>
       <section className="container mx-auto w-full bg-slate-400">
-          <h3 className="text-3xl text-white font-Poppins text-center p-4">Tiempo ⌛</h3>
+          <h3 className="text-3xl text-white font-Poppins text-center p-4">Amistad⌛</h3>
           <Tiempo/>
       </section>
       <Tabla/>
       <Footer
         phrase={
-          "Hay cosas buenas y malas de nosotros pero eso nos hace personas :D"
+          "Hay cosas buenas y malas de nosotros pero eso nos hace personas"
         }
         color={"bg-pastel-2"}
       />

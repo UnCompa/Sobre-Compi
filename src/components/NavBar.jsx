@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 
 export default function NavBar({ type }) {
@@ -26,7 +27,7 @@ export default function NavBar({ type }) {
             Información
           </NavLink>
         </li>
-        <li className="font-Monte text-gray-500 my-6 py-2 text-xl border-b-4 border-pastel">
+        <li className="font-Monte text-black my-6 py-2 text-xl border-b-4 border-pastel">
           <NavLink
             className={({ isActive }) =>
               isActive ? "text-purple-300 font-bold" : ""

@@ -1,18 +1,21 @@
-import './../styles/audioplayer.css'
-export default function Music({src}) {
+/* eslint-disable react/prop-types */
+import AudioPlayer from "react-h5-audio-player";
+import "react-h5-audio-player/lib/styles.css";
+export default function Music({ src }) {
   return (
     <>
-    <section className="bg-slate-400 container mx-auto h-24 relative -z-10">
-      <div className="p-6 -z-20">
-        <audio
-          src={src}
+      <section className="bg-slate-400 p-2 container mx-auto h-24 relative -z-10">
+        <AudioPlayer
           autoPlay
-          controls
-          className="w-full rounded-lg shadow-xl -z-10"
+          src={src}
+          className="h-full"
           loop
-        ></audio>
-      </div>
-    </section>
+          volume={.5}
+          showSkipControls={false}
+          showJumpControls={false}
+          controls
+        />
+      </section>
     </>
   );
 }
