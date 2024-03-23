@@ -22,7 +22,7 @@ function UpdateImage() {
     };
 
     fetchData();
-  }, [id,imageDetails.publicId]);
+  }, [id]);
   const handleClick = () => {
     navigate("/recuerdos");
   };
