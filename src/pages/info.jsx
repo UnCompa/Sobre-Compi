@@ -1,7 +1,6 @@
 import Footer from "../components/Footer";
 import Header from "./../components/Header";
 import Imagen from './../Imagenes/recuerdosnew/7.jpg'
-import Brillo from "./../Imagenes/brillo.jpg";
 import { Helmet } from "react-helmet";
 import Icono from "./../Imagenes/Icons/libreta.png";
 import Tabla from './../components/Table'
@@ -35,16 +34,15 @@ function Info() {
         <title>Información | Acerca de ella</title>
         <link rel="shortcut icon" href={Icono} type="image/x-icon" />
       </Helmet>
-      <Header title="Informacion" color={"bg-pastel-2"} />
+      <Header title="Informacion" color={"border-pastel-2"} />
       <Music src={Musica} />
-      <section className="container mx-auto h-full p-4 m-4 grid grid-cols-1 place-items-center md:grid-cols-3">
-        <div className="h-56 w-56 bg-pastel-2 rounded-full">
+      <section className="container bg-zinc-800 mx-auto h-full p-4 grid grid-cols-1 place-items-center md:grid-cols-3">
+        <div className="h-56 w-56 bg-pastel-2 rounded-full my-4">
           <img
             src={Imagen}
             alt="Imagen"
             className="h-full w-full object-cover rounded-full border-8 border-pastel-3 -z-10"
           />
-          <img src={Brillo} alt="Xd" className="absolute h-20 top-24 -z-10" />
         </div>
         <div className="bg-pastel-3 h-full w-full col-span-2 p-8 rounded-md">
           <h2 className="text-2xl font-Monte pb-2 text-rose-900">
@@ -59,7 +57,7 @@ function Info() {
             Ella nació el <strong>07 de marzo del 2007</strong>, una fecha especial que siempre celebrará.
           </p>
           <ul className="list-disc px-8 font-Poppins">
-            <li>Tiene 15 años</li>
+            <li>Tiene {years} años</li>
             <li>Mide 160cm aprox.</li>
             <li>Se llama Sam</li>
             <li>Su cumple es en marzo</li>

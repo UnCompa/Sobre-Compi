@@ -32,14 +32,15 @@ const Recuerdos2 = () => {
         <title>Recuerdos | Momentos inolvidables</title>
         <link rel="shortcut icon" href={Icono} type="image/x-icon" />
       </Helmet>
-      <Header title="Recuerdos" color={"bg-purple-300"} />
-      <Music src={Musica} />
+      <Header title="Recuerdos" color={"border-purple-300"} />
+    <div className="bg-fondo">
+      <Music src={Musica} /> 
+      <main className="min-h-screen h-full w-full my-4">
       <Form/>
-      <main className="min-h-screen h-full w-full bg-fondo">
-        <h2 className="font-Monte text-3xl my-4 py-4 px-4 bg-white inline-block rounded-lg text-center w-full">
+        <h2 className="font-Monte text-3xl my-2 py-4 px-4 bg-zinc-800 text-white inline-block text-center w-full">
           Fotos:
         </h2>
-        <section className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-2 bg-opacity-40">
+        <section className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-2 bg-opacity-40 px-4">
         {loading ? (
           <div className="col-span-5 animate-pulse bg-white">
             <h2 className="py-4 text-2xl font-bold text-center">Cargando...</h2>
@@ -66,6 +67,7 @@ const Recuerdos2 = () => {
         color={"bg-purple-300"}
         phrase={"Los recuerdos del pasado son lo que definen tu futuro"}
       />
+    </div>
     </>
   );
 };

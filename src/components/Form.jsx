@@ -40,7 +40,7 @@ const Form = () => {
         navigate("/");
       }
   return (
-    <div className=' bg-slate-50 container mx-auto border-2 border-pastel-4 my-4 p-4 shadow-lg'>
+    <div className=' bg-zinc-800 text-white container mx-auto border-2 border-pastel-4 p-4 shadow-lg'>
             <h2 className='font-Monte text-2xl'>Subir recuerdo</h2>
             <form action="" className='flex flex-col' onSubmit={(e)=>handleSubmit(e)}>
                 <label className='font-Poppins py-1' htmlFor="">Titulo:</label>
@@ -49,7 +49,7 @@ const Form = () => {
                 <input required onChange={(e)=> setDescription(e.target.value)} className='ring ring-pastel-4 px-1 font-Poppins focus:ring focus:ring-pastel-1' type="text" name="" id="" />
                 <label className='font-Poppins py-1' htmlFor="">Imagen:</label>
                 <div>
-                <div className="flex items-center justify-center gap-2 bg-pastel-4 w-full py-2 rounded-xl">
+                <div className="flex items-center justify-center gap-2 bg-pastel-4 w-full py-2 rounded-xl text-black">
                 <label htmlFor="inputUpload" className="font-Monte">Subir</label>
                 <FaDownload/>
                 </div>

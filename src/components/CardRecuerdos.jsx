@@ -8,7 +8,7 @@ export default function Recuerdos({ imagen, frase, title, id,createdAt,updatedAt
       <motion.article
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="bg-zinc-50 border-2 transition-all hover:border-pastel-5 hover:shadow-pastel-1 hover:bg-slate-400 border-pastel-3 h-full w-full p-2 rounded flex-col gap-4 shadow-lg"
+        className="bg-zinc-800 text-white border-2 transition-all hover:border-pastel-5 hover:shadow-pastel-1 hover:bg-zinc-900 border-pastel-3 h-full w-full p-2 rounded flex-col gap-4 shadow-lg"
       >
         <div>
           <img

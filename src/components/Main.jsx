@@ -21,7 +21,7 @@ export default function Main() {
       <main className="container mx-auto h-full">
         <Music src={Musica} />
         <section className="md:h-64 md:flex md:items-center my-2">
-          <div className="my-8 w-full bg-pastel-4 h-full">
+          <div className="my-8 w-full border-2 border-pastel-4 h-full text-white rounded">
             <h2 className="text-xl p-3 font-Monte font-bold">¿Para quién es?</h2>
             <p className="p-3 font-Poppins text-start">
               La página esta dedicada a mi <b>Mi compi ♫</b> donde estaran cosas
@@ -33,18 +33,18 @@ export default function Main() {
               Att: UnCompa
             </p>
           </div>
-          <div className="my-2 p-2 w-full h-full md:h-full md:w-72 bg-pastel-3">
-            <div className="h-full w-full flex justify-center p-1">
+          <div className="px-2 w-full h-full md:h-full md:w-72">
+            <div className="h-full w-full flex justify-center">
               <img
                 src={Imagen}
                 alt="Tu"
-                className="object-cover object-center h-96 md:h-full w-full"
+                className="object-cover object-center h-96 md:h-full w-full border-2 border-pastel-3"
               />
             </div>
           </div>
         </section>
         <section className="my-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-pastel-4 p-4 my-2">
+          <div className="border-pastel-4 border-2 text-white rounded p-4 my-2">
             <h3 className="text-xl font-Monte font-bold">Objectivos:</h3>
             <p className="font-Poppins py-2">
                Crear una página para la chica Sam, aqui estara Información de ella entre otras cosas. <br />
@@ -56,7 +56,7 @@ export default function Main() {
             </ul>
           </div>
           {/*Cartas*/}
-          <div className="bg-pastel-4 p-4 my-2">
+          <div className="border-pastel-4 border-2 text-white rounded p-4 my-2">
             <h3 className="text-xl font-Monte font-bold">Contenido:</h3>
             <ul className="list-disc px-8 py-2 font-Poppins font-bold">
                <li>
@@ -67,7 +67,7 @@ export default function Main() {
             </ul>
           </div>
         </section>
-        <h2 className="text-center text-4xl font-Monte font-semibold py-4 border-cyan-300 border-b-8 bg-cyan-200">
+        <h2 className="text-center text-4xl font-Monte font-semibold py-4 border-cyan-300 border-b-4 text-white bg-zinc-700">
           Tabla de contenido:
         </h2>
         <article className="grid grid-1 md:grid-cols-2 gap-4 py-4">
