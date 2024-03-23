@@ -26,7 +26,7 @@ const FormUpdate = ({ id, imageDetails }) => {
     navigate("/recuerdos")
   };
   return (
-    <div className=" bg-slate-50 container mx-auto border-2 border-pastel-4 my-4 p-4 shadow-lg">
+    <div className=" bg-zinc-800 container mx-auto border-2 border-pastel-4 my-4 p-4 shadow-lg">
       <h2 className="font-Monte text-2xl">Actualizar recuerdo</h2>
       <form
         action=""

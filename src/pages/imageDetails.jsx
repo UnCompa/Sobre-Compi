@@ -61,8 +61,8 @@ function ImageDetails() {
 
   return (
     <>
-      <Header color={"bg-zinc-500"} title={"Detalles"} />
-      <main className="container mx-auto p-4 font-Poppins">
+      <Header color={"border-yellow-500"} title={"Detalles"} />
+      <main className="container mx-auto p-4 font-Poppins text-white">
         <h2 className="text-center text-2xl font-bold">{imageDetails.title}</h2>
         <p className="text-lg py-2 text-center">
           Descripción: {imageDetails.description}
@@ -89,9 +89,9 @@ function ImageDetails() {
             Actualizar
           </button>
         </div>
-        <div className="bg-zinc-50 p-4 grid place-content-center">
+        <div className="bg-zinc-800 p-4 grid place-content-center">
           <img
-            className="aspect-auto h-[30rem] w-full object-cover"
+            className="border-2 border-white aspect-auto h-[30rem] w-full object-cover"
             src={imageDetails.url}
           />
         </div>

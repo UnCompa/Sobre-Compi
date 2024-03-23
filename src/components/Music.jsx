@@ -8,7 +8,7 @@ export default function Music({ src }) {
           autoPlay
           src={src}
           loop
-          volume={.5}
+          volume={.3}
           hasDefaultKeyBindings
         />
     </>

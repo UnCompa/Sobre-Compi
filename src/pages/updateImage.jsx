@@ -33,7 +33,7 @@ function UpdateImage() {
   return (
     <>
       <Header color={"bg-sky-500"} title={"Actualizar"} />
-      <main className="container mx-auto p-4 font-Poppins">
+      <main className="container mx-auto p-4 font-Poppins text-white">
         <section className="grid grid-cols-2">
           <div>
             <h2 className="text-center text-2xl font-bold">
@@ -49,9 +49,9 @@ function UpdateImage() {
               Volver
             </button>
           </div>
-          <div className="bg-zinc-50 p-4 grid place-content-center">
+          <div className="bg-zinc-800 p-4 grid place-content-center">
             <img
-              className="aspect-square h-[12rem] w-full object-cover"
+              className="border-2 border-white aspect-square h-[12rem] w-full object-cover"
               src={imageDetails.url}
             />
           </div>

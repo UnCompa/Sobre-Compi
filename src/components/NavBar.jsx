@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 export default function NavBar({ type }) {
   return (
     <nav
-      className={`w-1/2 fixed top-24 right-1/2 ${type} bg-slate-50 shadow-2xl text-white z-30`}
+      className={`h-screen w-1/2 fixed top-16 right-1/2 ${type} bg-zinc-800 shadow-2xl text-white z-30 transition-all duration-300 ease-in-out`}
     >
       <ul className="p-8 h-full">
-        <li className="font-Monte text-black my-6 py-2 text-xl border-b-4 border-pastel">
+        <li className="font-Monte text-white my-6 py-2 text-xl border-b-4 border-pastel">
           <NavLink
             className={({ isActive }) =>
               isActive ? "text-pastel-1 font-bold drop-shadow" : ""
@@ -17,7 +17,7 @@ export default function NavBar({ type }) {
             Inicio
           </NavLink>
         </li>
-        <li className="font-Monte text-black my-6 py-2 text-xl border-b-4 border-pastel">
+        <li className="font-Monte text-white my-6 py-2 text-xl border-b-4 border-pastel">
           <NavLink
             className={({ isActive }) =>
               isActive ? "text-pastel-2 font-bold" : ""
@@ -27,7 +27,7 @@ export default function NavBar({ type }) {
             Información
           </NavLink>
         </li>
-        <li className="font-Monte text-black my-6 py-2 text-xl border-b-4 border-pastel">
+        <li className="font-Monte text-white my-6 py-2 text-xl border-b-4 border-pastel">
           <NavLink
             className={({ isActive }) =>
               isActive ? "text-purple-300 font-bold" : ""

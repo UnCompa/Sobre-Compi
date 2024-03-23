@@ -23,7 +23,7 @@ function Header({ title, color }) {
     <header
       className={`sticky h-16 text-white bg-zinc-800 border-b-4 ${color} w-full flex items-center justify-between row-start-1 row-span-1 top-0 shadow-xl shadow-white/20 z-50`}
     >
-      <NavBar type={nav ? "h-0 hidden" : "h-screen"} />
+      <NavBar type={!nav ? "translate-x-0" : "-translate-x-[100%]"} />
       <button
         onClick={handleClick}
         onMouseEnter={playOpenSound}
