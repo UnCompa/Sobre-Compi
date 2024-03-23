@@ -37,6 +37,16 @@ export default function NavBar({ type }) {
             Recuerdos
           </NavLink>
         </li>
+        <li className="font-Monte text-white my-6 py-2 text-xl border-b-4 border-pastel">
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "text-sky-300 font-bold" : ""
+            }
+            to="/notas"
+          >
+            Notas
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

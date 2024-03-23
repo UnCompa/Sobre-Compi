@@ -26,12 +26,12 @@ export default function Footer({ phrase, color }) {
           alt="LogoAlt"
           className="h-16 object-cover w-44 md:w-52"
         />
-        <p className="font-Monte font-light px-8 text-center underline decoration-white decoration-2">
+        <p className="text-black font-Monte font-light px-8 text-center underline decoration-white decoration-2">
           {phrase}
         </p>
       </div>
       <div className="p-4 flex-col md:flex items-center">
-        <h3 className="text-2xl font-Monte text-center font-semibold">
+        <h3 className="text-2xl text-black font-Monte text-center font-semibold">
           Redes Sociales
         </h3>
         <div className="h-16 flex justify-center items-center w-1/1">

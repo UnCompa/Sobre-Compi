@@ -6,7 +6,6 @@ import Icono from "./../Imagenes/Icons/libreta.png";
 import Tabla from './../components/Table'
 import Tiempo from "../components/Time";
 import Music from "../components/Music";
-import Musica from "./../sound/Music.mp3";
 import { useEffect, useState } from "react";
 import dayjs from "dayjs";
 function Info() {
@@ -35,7 +34,7 @@ function Info() {
         <link rel="shortcut icon" href={Icono} type="image/x-icon" />
       </Helmet>
       <Header title="Informacion" color={"border-pastel-2"} />
-      <Music src={Musica} />
+      <Music/>
       <section className="container bg-zinc-800 mx-auto h-full p-4 grid grid-cols-1 place-items-center md:grid-cols-3">
         <div className="h-56 w-56 bg-pastel-2 rounded-full my-4">
           <img
@@ -48,15 +47,15 @@ function Info() {
           <h2 className="text-2xl font-Monte pb-2 text-rose-900">
             Información general:
           </h2>
-          <p className="font-Poppins">
+          <p className="font-Poppins text-black">
             Es una chica de {years} años a la que le gusta que la llamen Sam o Sami.
             Su altura es de 160 cm. En estos momentos, está bien y se siente
             bien con su cuerpo y mente.
           </p>
-          <p className="font-Poppins">
+          <p className="font-Poppins text-black">
             Ella nació el <strong>07 de marzo del 2007</strong>, una fecha especial que siempre celebrará.
           </p>
-          <ul className="list-disc px-8 font-Poppins">
+          <ul className="list-disc px-8 font-Poppins text-black">
             <li>Tiene {years} años</li>
             <li>Mide 160cm aprox.</li>
             <li>Se llama Sam</li>
