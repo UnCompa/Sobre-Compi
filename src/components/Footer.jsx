@@ -7,7 +7,7 @@ export default function Footer({ phrase, color }) {
     open("https://www.facebook.com/UnCompa1777");
   }
   function Instagram() {
-    open("https://www.instagram.com/UnCompa1777");;
+    open("https://www.instagram.com/UnCompa1777");
   }
   function TikTok() {
     open("https://tiktok.com");
