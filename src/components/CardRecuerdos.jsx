@@ -3,7 +3,13 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 export default function Recuerdos({ imagen, frase, title, id }) {
-   
+  const handleClick = () =>{
+    const api = `https://compis.onrender.com/api/images/${id}`
+    fetch(api,{
+      method: "DELETE"
+    }).then((res)=> res.json())
+    .then((data)=>console.log(data))
+  }
   return (
     <Link to={`/recuerdos/${id}`} className="text-black hover:-translate-y-0.5 transition-all">
       <motion.article

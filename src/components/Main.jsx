@@ -24,7 +24,9 @@ export default function Main() {
           <div className="my-8 w-full bg-pastel-4 h-full">
             <h2 className="text-xl p-3 font-Monte font-bold">¿Para quién es?</h2>
             <p className="p-3 font-Poppins text-start">
-              La página esta dedicada a Sam donde estaran cosas sobre ella, ademas de información sobre ella con una galeria de fotos para conocer un poco mas quien es
+              La página esta dedicada a mi <b>Mi compi ♫</b> donde estaran cosas
+              sobre ella, ademas de notas que ire dejando donde estaran los
+              cambios de la pagina, y cosas que hemos hecho.
             </p>
             <p className="p-3 font-Poppins text-start">
               Una pagina hecha como práctica, además de servir como tributo a Sam

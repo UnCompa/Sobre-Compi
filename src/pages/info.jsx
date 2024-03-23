@@ -56,12 +56,13 @@ function Info() {
             bien con su cuerpo y mente.
           </p>
           <p className="font-Poppins">
-            Ella nació el <strong>07 de marzo del 2008</strong>, una fecha especial que siempre celebrará.
+            Ella nació el <strong>07 de marzo del 2007</strong>, una fecha especial que siempre celebrará.
           </p>
           <ul className="list-disc px-8 font-Poppins">
-            <li>Tiene {years} años</li>
-            <li>Mide 160cm aproximadamente</li>
-            <li>Se llama Samantha Guañuna Valentina Castillo</li>
+            <li>Tiene 15 años</li>
+            <li>Mide 160cm aprox.</li>
+            <li>Se llama Sam</li>
+            <li>Su cumple es en marzo</li>
           </ul>
         </div>
       </section>
