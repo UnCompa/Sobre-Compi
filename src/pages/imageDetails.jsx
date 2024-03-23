@@ -46,7 +46,7 @@ function ImageDetails() {
       });
   };
   const handleUpdate = () => {
-    navigate(`/recuerdos`);
+    navigate(`/recuerdos/update/${imageDetails.id}`);
   };
   if (!imageDetails) {
     return (
