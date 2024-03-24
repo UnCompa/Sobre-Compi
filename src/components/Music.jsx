@@ -19,7 +19,6 @@ export default function Music() {
           src={musicSrc}
           loop
           volume={0.1}
-          hasDefaultKeyBindings
         />
     </>
   );

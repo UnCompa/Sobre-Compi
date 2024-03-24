@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Header from "../components/Header";
 import FormUpdate from "../components/FormUpdate";
+import Loader from "../components/Loader";
 
 function UpdateImage() {
   const { id } = useParams();
@@ -27,7 +28,12 @@ function UpdateImage() {
     navigate("/recuerdos");
   };
   if (!imageDetails) {
-    return <div>Cargando...</div>;
+    return (
+      <>
+        <Header color={"bg-sky-500"} title={"Actualizar"}/>
+        <Loader/>
+      </>
+    );
   }
 
   return (

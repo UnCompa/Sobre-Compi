@@ -1,12 +1,12 @@
 import Imagen from './../Imagenes/recuerdosnew/21.jpg'
 import Card from "./Card";
 import Card1 from "./../Imagenes/info.jpg";
+import Card2 from "./../Imagenes/notas.jpg";
 import Card3 from "./../Imagenes/recuerdos.jpg";
 import { useNavigate } from "react-router-dom";
 import { useSound } from "use-sound";
 import Tap from "./../sound/Whistle.mp3";
 import Music from "./Music";
-import Musica from "./../sound/Music.mp3";
 export default function Main() {
   let navigate = useNavigate();
   const [playsound] = useSound(Tap);
@@ -16,21 +16,23 @@ export default function Main() {
   function handleRecuerdos() {
     navigate("/recuerdos");
   }
+  function handleNotas() {
+    navigate("/notas");
+  }
   return (
     <>
       <main className="container mx-auto h-full">
-        <Music src={Musica} />
+        <Music/>
         <section className="md:h-64 md:flex md:items-center my-2">
           <div className="my-8 w-full border-2 border-pastel-4 h-full text-white rounded">
             <h2 className="text-xl p-3 font-Monte font-bold">¿Para quién es?</h2>
             <p className="p-3 font-Poppins text-start">
               La página esta dedicada a mi <b>Mi compi ♫</b> donde estaran cosas
-              sobre ella, ademas de notas que ire dejando donde estaran los
-              cambios de la pagina, y cosas que hemos hecho.
+              sobre ella, como quien es ella, fotos de ella, en fin sobre ella, espero le guste!!
             </p>
             <p className="p-3 font-Poppins text-start">
-              Una pagina hecha como práctica, además de servir como tributo a Sam
-              Att: UnCompa
+              Una pagina hecha como práctica, además de servir como tributo a Samantha mi gran amiga!!
+              De: UnCompa
             </p>
           </div>
           <div className="px-2 w-full h-full md:h-full md:w-72">
@@ -47,12 +49,13 @@ export default function Main() {
           <div className="border-pastel-4 border-2 text-white rounded p-4 my-2">
             <h3 className="text-xl font-Monte font-bold">Objectivos:</h3>
             <p className="font-Poppins py-2">
-               Crear una página para la chica Sam, aqui estara Información de ella entre otras cosas. <br />
+               Crear una página para la chica Samantha, aqui estara Información de ella entre otras cosas. <br />
             </p>
             <ul className="list-disc px-8 py-2 font-Poppins font-bold">
              <li>- Que sirva de ejemplo de mi trabajo</li>
              <li>- Una biografía sobre Sam</li>
              <li>- Un regalo para ella</li>
+             <li>- Porque la quiero</li>
             </ul>
           </div>
           {/*Cartas*/}
@@ -63,7 +66,7 @@ export default function Main() {
                 Información sobre la chica <br /> (Samantha)
                </li>
                <li>Galeria de imágenes de ella</li>
-               <li>Próximamente: Notas</li>
+               <li>Notas para agregar :D</li>
             </ul>
           </div>
         </section>
@@ -77,12 +80,7 @@ export default function Main() {
             img={Card1}
             color="bg-rose-400"
             title="Información"
-            code={
-              <span className="whitespace-nowrap rounded-full bg-cyan-400 px-2.5 py-0.5 text-sm text-white m-3">
-                Nuevo
-              </span>
-            }
-            text="Aqui estara todo lo relacionado con La Compi, datos sobre ella, gustos, cualidades, virtudes, sus debilidades, entre otras cosas relacionadas con ella, para ver mas pulsa el boton(No aun)."
+            text="Aqui estara todo lo relacionado con La Compi, datos sobre ella, gustos, cualidades, virtudes, sus debilidades, entre otras cosas relacionadas con ella, para ver mas pulsa el boton."
           />
           <Card
             sound={playsound}
@@ -90,7 +88,20 @@ export default function Main() {
             img={Card3}
             color="bg-green-300"
             title="Recuerdos"
-            text="La pagina contendra recuerdos que tengo con ella y seran destacadas en este lugar, es como un album de momentos importantes con ella, espero no la moleste y disfrute de esta sección."
+            text="La pagina contendra recuerdos de ella y seran destacadas en este lugar, es como un album de momentos importantes con ella, espero no la moleste y disfrute de esta sección."
+          />
+          <Card
+            sound={playsound}
+            evento={handleNotas}
+            img={Card2}
+            color="bg-sky-300"
+            title="Notas"
+            code={
+              <span className="whitespace-nowrap rounded-full bg-pink-400 px-2.5 py-0.5 text-sm text-white m-3">
+                Nuevo
+              </span>
+            }
+            text="En esta seccion habra notas, creadas por cualquier persona que desee, puedes escribir lo que piensas ademas de que puede envair links directamente en tus notas, disfruta!!"
           />
         </article>
       </main>

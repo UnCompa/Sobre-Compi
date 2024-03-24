@@ -58,8 +58,8 @@ function Info() {
           <ul className="list-disc px-8 font-Poppins text-black">
             <li>Tiene {years} años</li>
             <li>Mide 160cm aprox.</li>
-            <li>Se llama Sam</li>
-            <li>Su cumple es en marzo</li>
+            <li>Se llama Samantha Guañuna Valeria Castillo</li>
+            <li>Su cumpleaños es en marzo</li>
           </ul>
         </div>
       </section>

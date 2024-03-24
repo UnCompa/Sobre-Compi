@@ -55,9 +55,6 @@ const FormUpdate = ({ id, imageDetails }) => {
           name=""
           id=""
         />
-        <label className="font-Poppins py-1" htmlFor="">
-          Imagen:
-        </label>
         <div>
         </div>
         <button className="bg-pastel-1 my-2 px-4 py-2 rounded-md text-white font-Monte">

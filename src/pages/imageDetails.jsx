@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Header from "../components/Header";
+import Loader from "../components/Loader";
 
 function ImageDetails() {
   const { id } = useParams();
@@ -52,9 +53,7 @@ function ImageDetails() {
     return (
       <>
         <Header color={"bg-zinc-500"} title={"Detalles"} />
-        <div className="container mx-auto">
-          <h2 className="text-xl font-bold text-center">Cargando...</h2>
-        </div>
+        <Loader/>
       </>
     );
   }

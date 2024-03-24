@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Recuerdos({ imagen, frase, title, id,createdAt,updatedAt }) {
   return (
-    <Link to={`/recuerdos/update/${id}`} className="text-black hover:-translate-y-0.5 transition-all">
+    <Link to={`/recuerdos/${id}`} className="text-black hover:-translate-y-0.5 transition-all">
       <motion.article
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

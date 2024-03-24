@@ -7,7 +7,7 @@ import FormNotaCreate from "../components/FormNotaCreate";
 import NotaCard from "../components/NotaCard";
 import { useEffect, useState } from "react";
 import { allNotes } from "../utils/apiNotes";
-import { Spinner } from "@nextui-org/react";
+import Loader from "../components/Loader";
 export default function Notas() {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)
@@ -32,9 +32,7 @@ export default function Notas() {
       <FormNotaCreate/>
       <main className="min-h-screen h-full container mx-auto p-4">
           {loading ? (
-            <div className="w-full container mx-auto grid place-content-center">
-              <Spinner size="lg" color="secondary" label="Cargando notas"/>
-            </div>
+            <Loader/>
           ): (
             <>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
