@@ -6,15 +6,15 @@ import {Helmet} from 'react-helmet'
 function Home() {
   return (
     <>
-      <div className="grid grid-rows-layout">
+      <div className="grid grid-rows-layout bg-zinc-800">
         <Helmet>
           <title>Inicio | Todo lo destacado</title>
           <link rel="shortcut icon" href={Icono} type="image/x-icon" />
         </Helmet>
-        <Header title="Inicio" color={"bg-pastel-1"} />
+        <Header title="Inicio" color={"border-pastel-1"} />
         <Main />
-        <Footer phrase="La vida es una, asi que vivela con las personas que mas quieres" color={"bg-pastel-1"}/>
       </div>
+      <Footer phrase="La vida es una, asi que vivela con las personas que mas quieres" color={"bg-pastel-1"}/>
     </>
   );
 }
