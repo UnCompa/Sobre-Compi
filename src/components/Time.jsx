@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import dayjs from "dayjs";
 import duration from "dayjs/plugin/duration";
 import localizedFormat from "dayjs/plugin/localizedFormat";
@@ -5,8 +6,8 @@ import { useEffect, useState } from "react";
 
 dayjs.extend(duration, localizedFormat);
 
-export default function Time() {
-  const initialDate = dayjs("2023-06-15T05:39:00");
+export default function Time({time}) {
+  const initialDate = dayjs(time);
   const [elapsedTime, setElapsedTime] = useState(dayjs.duration(dayjs().diff(initialDate)));
   
   useEffect(() => {

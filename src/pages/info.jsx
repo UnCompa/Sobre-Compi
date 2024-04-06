@@ -64,8 +64,10 @@ function Info() {
         </div>
       </section>
       <section className="container mx-auto w-full bg-slate-400">
-          <h3 className="text-3xl text-white font-Poppins text-center p-4">Amistad⌛</h3>
-          <Tiempo/>
+          <h3 className="text-3xl text-white font-Poppins text-center p-4 underline decoration-2 decoration-red-400">Sam x Brandon</h3>
+          <Tiempo time={"2023-06-15T05:39:00"}/>
+          <h3 className="text-3xl text-white font-Poppins text-center p-4 underline decoration-2 decoration-red-400">Sam x Emi</h3>
+          <Tiempo time={"2017-03-11T07:12:35"}/>
       </section>
       <Tabla/>
       <Footer

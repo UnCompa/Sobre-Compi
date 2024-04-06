@@ -1,4 +1,4 @@
-import Imagen from './../Imagenes/recuerdosnew/21.jpg'
+import Imagen from './../Imagenes/recuerdosnew/Amiga.jpeg'
 import Card from "./Card";
 import Card1 from "./../Imagenes/info.jpg";
 import Card2 from "./../Imagenes/notas.jpg";
@@ -25,14 +25,12 @@ export default function Main() {
         <Music/>
         <section className="md:h-64 md:flex md:items-center my-2">
           <div className="my-8 w-full border-2 border-pastel-4 h-full text-white rounded">
-            <h2 className="text-xl p-3 font-Monte font-bold">¿Para quién es?</h2>
+            <h2 className="text-xl p-3 font-Monte font-bold">¿Quien es?</h2>
             <p className="p-3 font-Poppins text-start">
-              La página esta dedicada a mi <b>Mi compi ♫</b> donde estaran cosas
-              sobre ella, como quien es ella, fotos de ella, en fin sobre ella, espero le guste!!
+              La página esta hecho para <b>Samantha ♫</b> donde estaran cosas sobre ella, como quien es ella, fotos de ella, en fin sobre ella, espero le guste!!
             </p>
             <p className="p-3 font-Poppins text-start">
-              Una pagina hecha como práctica, además de servir como tributo a Samantha mi gran amiga!!
-              De: UnCompa
+              Una pagina hecha como práctica, además de servir como tributo a Samantha!!
             </p>
           </div>
           <div className="px-2 w-full h-full md:h-full md:w-72">
@@ -52,10 +50,10 @@ export default function Main() {
                Crear una página para la chica Samantha, aqui estara Información de ella entre otras cosas. <br />
             </p>
             <ul className="list-disc px-8 py-2 font-Poppins font-bold">
-             <li>- Que sirva de ejemplo de mi trabajo</li>
-             <li>- Una biografía sobre Sam</li>
-             <li>- Un regalo para ella</li>
-             <li>- Porque la quiero</li>
+             <li>Que sirva de ejemplo de mi trabajo</li>
+             <li>Una biografía sobre Sam</li>
+             <li>Un regalo para ella</li>
+             <li>Porque la quiero</li>
             </ul>
           </div>
           {/*Cartas*/}
@@ -63,7 +61,7 @@ export default function Main() {
             <h3 className="text-xl font-Monte font-bold">Contenido:</h3>
             <ul className="list-disc px-8 py-2 font-Poppins font-bold">
                <li>
-                Información sobre la chica <br /> (Samantha)
+                Información sobre la chica (Samantha)
                </li>
                <li>Galeria de imágenes de ella</li>
                <li>Notas para agregar :D</li>
@@ -80,7 +78,7 @@ export default function Main() {
             img={Card1}
             color="bg-rose-400"
             title="Información"
-            text="Aqui estara todo lo relacionado con La Compi, datos sobre ella, gustos, cualidades, virtudes, sus debilidades, entre otras cosas relacionadas con ella, para ver mas pulsa el boton."
+            text="Aqui estará todo lo relacionado con Samantha, datos sobre ella, gustos, cualidades, virtudes, sus debilidades, entre otras cosas relacionadas con ella, para ver mas pulsa el boton."
           />
           <Card
             sound={playsound}
@@ -88,7 +86,7 @@ export default function Main() {
             img={Card3}
             color="bg-green-300"
             title="Recuerdos"
-            text="La pagina contendra recuerdos de ella y seran destacadas en este lugar, es como un album de momentos importantes con ella, espero no la moleste y disfrute de esta sección."
+            text="La página contendra recuerdos de ella y seran destacadas en este lugar, es como un album de momentos importantes con ella, espero no la moleste y disfrute de esta sección."
           />
           <Card
             sound={playsound}
