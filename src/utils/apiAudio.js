@@ -1,19 +1,18 @@
-const api = "https://compis.onrender.com/api/upload/images"
-
-export const allImgs = async() => {
+const api = "https://compis.onrender.com/api/upload/audio"
+export const allAudios = async() => {
     const response = await fetch(api)
     const data = response.json()
     return data
 }
-export const findImg = async(id) => {
+export const findAudio = async(id) => {
     const response = await fetch(`${api}/${id}`)
     const data = response.json()
     return data
 }
-export const createImg = async (img) => {
+export const createAudio = async (Audio) => {
     const response = await fetch(`${api}/upload`,{
         method: "POST",
-        body: JSON.stringify(img),
+        body: JSON.stringify(Audio),
         headers: {
           "Content-Type": "application/json",
         },
@@ -21,7 +20,7 @@ export const createImg = async (img) => {
       const dataResponse = await response.json()
       return dataResponse
 }
-export const editImg = async (id,note) => {
+export const editAudio = async (id,note) => {
     const response = await fetch(`${api}/${id}`,{
         method: "PUT",
         body: JSON.stringify(note),
@@ -32,7 +31,7 @@ export const editImg = async (id,note) => {
       const dataResponse = await response.json()
       return dataResponse
 }
-export const deleteImg = async (id) => {
+export const deleteAudio = async (id) => {
     const response = await fetch(`${api}/${id}`, {
         method: "DELETE",
     })

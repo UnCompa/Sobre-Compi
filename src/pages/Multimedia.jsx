@@ -4,6 +4,7 @@ import Icono from "./../Imagenes/brillo.jpg";
 //import { uploadFile } from "../firebase/storage";
 import { useState } from "react";
 import ViewImage from "../components/ViewImage";
+import ViewMusic from "../components/ViewMusic";
 export default function Multimedia() {
   const [tab, setTab] = useState(1);
   /*const handleUploadFile = async(e) => {
@@ -41,7 +42,7 @@ export default function Multimedia() {
         </nav>
         <section>
           {tab === 1 && <ViewImage/>}
-          {tab === 2 && <h1>Contenido de Audios</h1>}
+          {tab === 2 && <ViewMusic/>}
           {tab === 3 && <h1>Contenido de Videos</h1>}
         </section>
       </main>
