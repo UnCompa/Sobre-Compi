@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import LoadingPage from "./components/LoadingPage";
 import EditNote from "./components/EditNote";
+import Multimedia from "./pages/Multimedia";
 const Home = lazy(() => import("./pages/home"));
 const Info = lazy(() => import("./pages/info"));
 const Recuerdos2 = lazy(() => import("./pages/recuerdos2"));
@@ -20,6 +21,7 @@ function App() {
         <Route path="/recuerdos/update/:id" element={<UpdateImage />} />
         <Route path="/notas" element={<Notas />} />
         <Route path="/notas/:id" element={<EditNote />} />
+        <Route path="/multimedia" element={<Multimedia />} />
         <Route path="*" element={<NoFound />} />
       </Routes>
     </Suspense>
