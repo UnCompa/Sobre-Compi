@@ -5,7 +5,7 @@ import Music2 from './../sound/Esta canción es hermosamente triste (.mp3';
 import Music3 from './../sound/esta música electrónica es muy adictiva.mp3';
 import Music4 from './../sound/la canción más kawai del mundo.mp3';
 import Music5 from './../sound/snowfall.mp3';
-import "react-h5-audio-player/lib/styles.css";
+import "./../styles/audioplayer.css";
 
 const musics = [Music1, Music2,Music3,Music4,Music5];
 const randomIndex = Math.floor(Math.random() * musics.length);
@@ -19,6 +19,7 @@ export default function Music() {
           src={musicSrc}
           loop
           volume={0.1}
+          className="bg-zinc-800"
         />
     </>
   );

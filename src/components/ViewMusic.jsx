@@ -65,7 +65,7 @@ export default function ViewMusic() {
         <button className="w-full py-2 hover:bg-green-900 bg-green-700 disabled:bg-green-950 transition-colors" disabled={file === null} >Enviar</button>
       </form>
       <main>
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-4 gap-4">
+        <section className="grid grid-cols-1 lg:grid-cols-2 p-4 gap-4">
           {data.map((audio) => {
             return (
               <div key={audio.id} className="bg-zinc-800 h-max font-Poppins p-4">
