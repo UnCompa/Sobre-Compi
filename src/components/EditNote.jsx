@@ -54,7 +54,7 @@ function EditNote() {
             <p className="font-extralight text-zinc-500">Actualizado: {note.updatedAt}</p>
           </div>
         </div>
-        <div className="py-4">
+        <div className="py-4 h-screen overflow-y-auto">
         <Linkify
           componentDecorator={(decoratedHref, decoratedText, key) => (
             <a
@@ -70,13 +70,13 @@ function EditNote() {
         </Linkify>
         </div>
       </main>
-      <aside className="p-4 overflow-y-auto h-screen">
+      <aside className="p-4 overflow-y-auto h-[50vh] bg-zinc-900">
         <h3 className="text-2xl font-bold py-4">Mas notas: </h3>
         {loading ? (
             <Loader/>
           ): (
             <>
-            <div className="grid grid-cols-1 gap-4">
+            <div className="p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
             {
               data.map((note)=> {
                 return (
