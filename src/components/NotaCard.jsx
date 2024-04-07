@@ -11,6 +11,7 @@ import { deleteNote } from "../utils/apiNotes";
 import { useState } from "react";
 import Linkify from "react-linkify";
 import "./../styles/audioplayer.css";
+import { Link } from "react-router-dom";
 
 export default function NotaCard({ title, autor, content, important, id }) {
   console.log(content);
@@ -24,11 +25,12 @@ export default function NotaCard({ title, autor, content, important, id }) {
     console.log(deleteData);
   };
   return (
-    <Card
+    <Link to={`/notas/${id}`}>
+      <Card
       className={`flex flex-col shadow-purple-500/10 shadow-lg ${isImportant}`}
     >
       <CardHeader className="flex flex-col items-start">
-        <h3 className="text-2xl font-Monte underline decoration-2 decoration-purple-500">
+        <h3 className="text-2xl font-Poppins capitalize font-bold underline decoration-2 decoration-purple-500">
           {title}
         </h3>
         <span className="text-zinc-500">- {autor}</span>
@@ -82,5 +84,6 @@ export default function NotaCard({ title, autor, content, important, id }) {
         </Button>
       </CardFooter>
     </Card>
+    </Link>
   );
 }

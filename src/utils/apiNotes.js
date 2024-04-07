@@ -5,10 +5,25 @@ export const allNotes = async() => {
     const data = response.json()
     return data
 }
-
+export const findNote = async(id) => {
+    const response = await fetch(`${api}/${id}`)
+    const data = response.json()
+    return data
+}
 export const createNote = async (note) => {
     const response = await fetch(api,{
         method: "POST",
+        body: JSON.stringify(note),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      const dataResponse = await response.json()
+      return dataResponse
+}
+export const editNote = async (id,note) => {
+    const response = await fetch(`${api}/${id}`,{
+        method: "PUT",
         body: JSON.stringify(note),
         headers: {
           "Content-Type": "application/json",

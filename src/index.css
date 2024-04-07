@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 * {
-    scrollbar-color: #000;
-    scrollbar-width: 10px;
-    scrollbar-track-color: #0ad;
-    scrollbar-base-color: aqua;
+    scrollbar-width: thin;
+    scrollbar-color: white rgb(39 39 42 );
 }
