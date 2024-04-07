@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { allImgs, createImg, deleteImg } from "../utils/apiImages";
 import { deleteFile, uploadFile } from "../firebase/storage";
+import Loader from "./Loader";
 
 export default function ViewImage() {
   const [file, setFile] = useState(null);
+  const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
@@ -12,6 +14,7 @@ export default function ViewImage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true)
     const url = await uploadFile(file, file.name);
     const newImage = {
       url: url,
@@ -19,6 +22,7 @@ export default function ViewImage() {
     };
     console.log(url);
     const res = await createImg(newImage);
+    setLoading(false)
     console.log(res);
     window.location.reload();
   };
@@ -60,14 +64,15 @@ export default function ViewImage() {
         {file && (
           <p className="text-zinc-100">Archivo seleccionado: {file.name}</p>
         )}
+        {loading ? <Loader text="" /> : <></>}
         <button className="w-full py-2 hover:bg-green-900 bg-green-700 disabled:bg-green-950 transition-colors" disabled={file === null} >Enviar</button>
       </form>
       <main>
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-4 gap-4">
           {data.map((imgs) => {
             return (
-              <div key={imgs.id} className="bg-zinc-800 h-max font-Poppins p-4">
-                <figure className="w-full h-full">
+              <div key={imgs.id} className="bg-zinc-800 h-full font-Poppins p-4">
+                <figure className="w-full h-max">
                   <img
                     className="aspect-square rounded object-cover w-full h-full"
                     src={imgs.url}

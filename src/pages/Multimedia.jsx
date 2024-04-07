@@ -5,6 +5,7 @@ import Icono from "./../Imagenes/brillo.jpg";
 import { useState } from "react";
 import ViewImage from "../components/ViewImage";
 import ViewMusic from "../components/ViewMusic";
+import ViewVideo from "../components/ViewVideo";
 export default function Multimedia() {
   const [tab, setTab] = useState(1);
   /*const handleUploadFile = async(e) => {
@@ -43,7 +44,7 @@ export default function Multimedia() {
         <section>
           {tab === 1 && <ViewImage/>}
           {tab === 2 && <ViewMusic/>}
-          {tab === 3 && <h1>Contenido de Videos</h1>}
+          {tab === 3 && <ViewVideo/>}
         </section>
       </main>
     </>

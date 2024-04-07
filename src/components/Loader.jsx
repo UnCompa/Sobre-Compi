@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import { Spinner } from "@nextui-org/react";
 
-function Loader() {
+function Loader({text = "Cargando"}) {
   return (
-    <div className="w-full container mx-auto grid place-content-center">
-      <Spinner size="lg" color="secondary" label="Cargando" />
+    <div className="w-full py-4 container mx-auto grid place-content-center">
+      <Spinner size="lg" color="secondary" label={text} />
     </div>
   );
 }
