@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
+import ModalButton from "./ModalButton";
 
 export default function NavBar({ type }) {
   return (
@@ -56,6 +57,9 @@ export default function NavBar({ type }) {
           >
             Multimedia
           </NavLink>
+        </li>
+        <li>
+          <ModalButton/>
         </li>
       </ul>
     </nav>

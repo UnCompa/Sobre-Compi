@@ -23,6 +23,7 @@
     "react-icons": "^4.11.0",
     "react-linkify": "1.0.0-alpha",
     "react-router-dom": "^6.16.0",
+    "sonner": "^1.4.41",
     "use-sound": "^4.0.1"
   },
   "devDependencies": {
