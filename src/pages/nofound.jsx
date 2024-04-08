@@ -5,6 +5,7 @@ export default function NoFound() {
         <h1 className='text-8xl text-slate-500 font-Monte text-center my-4'>404</h1>
         <h2 className='text-3xl font-Monte text-center'>Ruta desconocida</h2>        
         <p className='text-center m-4 font-Poppins'><b>No se encontro: </b> <br />{link}</p>
+        <a href="/" className="bg-slate-200 text-center m-4 font-Poppins">Regresar</a>
     </div>
   )
 }
